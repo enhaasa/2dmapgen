@@ -1,0 +1,9 @@
+@use '@styles/colors.scss' as colors;
+
+.container {
+    display: grid;
+    height: 100vh;
+
+    background: colors.bg('primary');
+    color: white;
+}
