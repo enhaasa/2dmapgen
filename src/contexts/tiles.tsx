@@ -7,18 +7,18 @@ export interface ITilesContext {
     }
 }
 
-const MapContext = createContext({} as ITilesContext);
+const TilesContext = createContext({} as ITilesContext);
 
-function MapContextProvider({ children }: any) {
+function TilesContextProvider({ children }: any) {
     const [ size, setSize ] = useState(1);
 
     return (
-        <MapContext.Provider value={{
+        <TilesContext.Provider value={{
             size: {get: size, set: setSize }
         }}>
             {children}
-        </MapContext.Provider>
+        </TilesContext.Provider>
     )
 }
 
-export { MapContextProvider, MapContext };
+export { TilesContextProvider, TilesContext };
