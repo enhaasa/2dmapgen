@@ -1,3 +1,12 @@
-.container {
+@use '@styles/dimensions' as dimensions;
 
+.container {
+    display: flex;
+    justify-content: center;
+
+    & .map {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        gap: dimensions.padding('xxs');
+    }
 }

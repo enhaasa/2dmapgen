@@ -1,5 +1,7 @@
 @use '@styles/colors.scss' as colors;
+@use '@styles/dimensions.scss' as dimensions;
 
 .container {
     background: colors.bg("secondary");
+    padding: dimensions.padding("md");
 }

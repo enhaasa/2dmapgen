@@ -1,3 +1,8 @@
-.container {
+@use '@styles/dimensions.scss' as dimensions;
 
+.container {
+    display: flex;
+    gap: dimensions.padding("md");
+    align-items: center;
+    padding: dimensions.padding("md");
 }

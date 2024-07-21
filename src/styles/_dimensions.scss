@@ -1,0 +1,12 @@
+$paddings: (
+    "xxs": 1px,
+    "xs": 2px,
+    "sm": 5px,
+    "md": 10px,
+    "lg": 25px,
+    "xl": 50px 
+);
+
+@function padding($name) {
+    @return map-get($paddings, $name);
+}

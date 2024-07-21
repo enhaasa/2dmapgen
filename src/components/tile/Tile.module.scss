@@ -1,0 +1,10 @@
+.container {
+    background: white;
+    height: 32px;
+    width: 32px;
+
+    &:hover {
+        filter: brightness(0.9);
+        cursor: pointer;
+    }
+}
