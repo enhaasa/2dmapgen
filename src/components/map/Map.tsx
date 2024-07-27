@@ -13,7 +13,7 @@ interface IMap {
     tiles: TTile[];
 }
 
-export default function Map({ width, height, tiles }: IMap) {
+export default function Map({ tiles }: IMap) {
     return (
         <div className={styles.container}>
             <div className={styles.map}>

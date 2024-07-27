@@ -8,6 +8,8 @@ interface ITile {
 
 export default function Tile({ tile }: ITile) {
 
+    console.log(tile)
+
     return (
         <div className={styles.container}>
 
