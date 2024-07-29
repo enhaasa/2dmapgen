@@ -1,11 +1,24 @@
 services:
-  frontend: 
-    build: 
+  frontend:
+    build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"
-    volumes: 
+      - '5173:5173'
+    volumes:
       - ./frontend:/app
       - /app/node_modules
     command: npm run dev
+    container_name: frontend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    command: npm run dev
+    container_name: backend
