@@ -9,5 +9,12 @@ export default defineConfig({
     alias: {
       '@styles': path.resolve(__dirname, './src/styles'),
     }
+  },
+  server: {
+    host: true,
+    port: 5173,
+    watch: {
+      usePolling: true,
+    }
   }
 })
